@@ -15,21 +15,22 @@ cd e-commerce-api
 ## Install Dependencies
 bash
 Copy code
-npm install
+
+#### npm install
 ## Configure Environment Variables
 Create a .env file in the root of your project with the following content:
 
 env
 Copy code
-PORT=5000
-MONGO_URI=mongodb://localhost:27017/e_commerce_db
-JWT_SECRET=your-secret-key
+#### PORT=5000
+#### MONGO_URI=mongodb://localhost:27017/e_commerce_db
+#### JWT_SECRET=your-secret-key
 Replace your-secret-key with your own secret key for JWT.
 
 ### Run the Application
 bash
 Copy code
-npm start
+#### npm start
 The server will be running at http://localhost:5000.
 
 ## API Routes
@@ -43,7 +44,7 @@ Copy code
   "username": "john_doe",
   "password": "your_password",
   "userType": "buyer"
-}
+  }
  ### Login User
 Endpoint: POST /api/auth/login
 Body:
