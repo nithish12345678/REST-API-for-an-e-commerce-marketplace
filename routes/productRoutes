@@ -1,0 +1,10 @@
+const express = require("express");
+const { getAllProducts, createProduct, deleteProduct } = require("../controllers/productController");
+
+const router = express.Router();
+
+router.post("/create", createProduct);
+router.post("/remove/:productId", deleteProduct);
+router.get("/", getAllProducts);
+
+module.exports = router;
