@@ -28,8 +28,8 @@ app.use('/api/buyer', buyerRoutes);
 app.use('/api/seller', sellerRoutes);
 app.use('/api/product', productRoutes);
 
-
-app.get("/json", (req, res) => { res.send("hi") })
+app.get("/", (req, res) => { res.send("<h1>API working succesfully</h1>") })
+// app.get("/json", (req, res) => { res.send("hi") })
 // Server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
