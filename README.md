@@ -1,6 +1,8 @@
 # REST-API-for-an-e-commerce-marketplace
 # E-Commerce Marketplace API
 
+# deployed live link: https://rest-api-e-commerce.onrender.com
+
 ## Setup
 
 ### Prerequisites
