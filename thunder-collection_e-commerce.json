@@ -1,0 +1,294 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "e-commerce",
+    "dateExported": "2024-01-11T09:04:17.044Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "c67c5828-5973-46f8-b554-086ebbe9dd63",
+            "name": "auth",
+            "containerId": "",
+            "created": "2024-01-10T22:18:41.372Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "b83c1192-ac04-43c9-badd-333b836d1a21",
+            "name": "seller",
+            "containerId": "",
+            "created": "2024-01-10T22:18:49.231Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "e24d4f6b-ac48-4076-8d5b-987d04722751",
+            "name": "buyyer",
+            "containerId": "",
+            "created": "2024-01-10T22:19:15.053Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "8665105b-c428-44d9-aa9d-f13175edbdec",
+            "name": "register",
+            "containerId": "c67c5828-5973-46f8-b554-086ebbe9dd63",
+            "created": "2024-01-10T22:24:41.971Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "f9a0cc18-221b-4d21-af6b-305af1bbee2d",
+            "name": "login",
+            "containerId": "c67c5828-5973-46f8-b554-086ebbe9dd63",
+            "created": "2024-01-10T22:24:51.989Z",
+            "sortNum": 50000
+        },
+        {
+            "_id": "918cc836-2fb4-4a08-9971-fc740361ac18",
+            "name": "product",
+            "containerId": "",
+            "created": "2024-01-11T07:14:38.315Z",
+            "sortNum": 60000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "813d6569-de62-4f4d-adc0-a97e7c233854",
+            "colId": "a94e21b0-0e78-4220-8346-65fd8f547db0",
+            "containerId": "8665105b-c428-44d9-aa9d-f13175edbdec",
+            "name": "register buyer",
+            "url": "http://localhost:5000/api/auth/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-01-10T22:19:42.489Z",
+            "modified": "2024-01-10T22:23:31.112Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"username\": \"buyer1\",\r\n  \"password\": \"password\",\r\n  \"userType\": \"buyer\"\r\n}\r\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "08e72b99-3f1e-49ff-a36b-af64e0a0b800",
+            "colId": "a94e21b0-0e78-4220-8346-65fd8f547db0",
+            "containerId": "8665105b-c428-44d9-aa9d-f13175edbdec",
+            "name": "register seller",
+            "url": "http://localhost:5000/api/auth/register",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-01-10T22:23:53.054Z",
+            "modified": "2024-01-11T08:53:49.522Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"seller1\",\n  \"password\": \"password\",\n  \"userType\": \"seller\"\n}\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "72bab430-4f24-4fed-b31e-a8a1def0eab1",
+            "colId": "a94e21b0-0e78-4220-8346-65fd8f547db0",
+            "containerId": "",
+            "name": "h",
+            "url": "http://localhost:5000/json",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-01-10T22:23:11.460Z",
+            "modified": "2024-01-10T22:23:20.659Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e1906a96-87eb-4629-ba2d-840815309045",
+            "colId": "a94e21b0-0e78-4220-8346-65fd8f547db0",
+            "containerId": "f9a0cc18-221b-4d21-af6b-305af1bbee2d",
+            "name": "seller login",
+            "url": "http://localhost:5000/api/auth/login",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-01-10T22:25:05.140Z",
+            "modified": "2024-01-11T07:16:27.154Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"seller1\",\n  \"password\": \"password\"\n}\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d67e0972-1887-4540-90db-64fc58624841",
+            "colId": "a94e21b0-0e78-4220-8346-65fd8f547db0",
+            "containerId": "f9a0cc18-221b-4d21-af6b-305af1bbee2d",
+            "name": "buyyer login",
+            "url": "http://localhost:5000/api/auth/login",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-01-10T22:25:16.458Z",
+            "modified": "2024-01-11T08:07:24.240Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"buyer1\",\n  \"password\": \"password\"\n}\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ad390c87-dbc1-49c7-abcf-71065327eecd",
+            "colId": "a94e21b0-0e78-4220-8346-65fd8f547db0",
+            "containerId": "b83c1192-ac04-43c9-badd-333b836d1a21",
+            "name": "Create Catalog for Seller",
+            "url": "http://localhost:5000/api/seller/create-catalog",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-01-10T22:31:43.308Z",
+            "modified": "2024-01-11T08:05:34.314Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTlmMTkxZTY2NDliZmI2OTQyMTExODIiLCJ1c2VyVHlwZSI6InNlbGxlciIsImlhdCI6MTcwNDkyNTg4MH0.lHhVNgmYJUHYM9z010AZ-mQYCi8g_J3dzD5XzQSpKDU"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"items\": [\n    \n      \"659f9b1fad89a873145f3a6a\", \"659f9b29ad89a873145f3a6c\",\n     \"659f9b47ad89a873145f3a6e\"\n  ]\n}\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "69caaa0e-26fa-429a-9133-b1aa99ff4748",
+            "colId": "a94e21b0-0e78-4220-8346-65fd8f547db0",
+            "containerId": "918cc836-2fb4-4a08-9971-fc740361ac18",
+            "name": "getall",
+            "url": "http://localhost:5000/api/product/",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-01-11T07:14:45.698Z",
+            "modified": "2024-01-11T07:19:35.216Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "dc62f5cf-89ae-48ac-b2db-76a705d272cd",
+            "colId": "a94e21b0-0e78-4220-8346-65fd8f547db0",
+            "containerId": "918cc836-2fb4-4a08-9971-fc740361ac18",
+            "name": "create",
+            "url": "http://localhost:5000/api/product/create",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2024-01-11T07:14:51.532Z",
+            "modified": "2024-01-11T07:39:51.747Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"bed\",\n  \"price\":8000\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f0c3c908-7298-492b-a3ba-3967e565d75e",
+            "colId": "a94e21b0-0e78-4220-8346-65fd8f547db0",
+            "containerId": "b83c1192-ac04-43c9-badd-333b836d1a21",
+            "name": "getOrders",
+            "url": "http://localhost:5000/api/seller/orders",
+            "method": "GET",
+            "sortNum": 95000,
+            "created": "2024-01-11T08:10:48.808Z",
+            "modified": "2024-01-11T08:25:04.481Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTlmMTkxZTY2NDliZmI2OTQyMTExODIiLCJ1c2VyVHlwZSI6InNlbGxlciIsImlhdCI6MTcwNDkyNTg4MH0.lHhVNgmYJUHYM9z010AZ-mQYCi8g_J3dzD5XzQSpKDU"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "68f2490c-f209-4888-87b7-7e830ab6e8f6",
+            "colId": "a94e21b0-0e78-4220-8346-65fd8f547db0",
+            "containerId": "918cc836-2fb4-4a08-9971-fc740361ac18",
+            "name": "delete",
+            "url": "http://localhost:5000/api/product/remove/659f981bfa400c0c13cb179e",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2024-01-11T07:14:57.411Z",
+            "modified": "2024-01-11T07:38:50.489Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "90584379-7bbe-42c6-a691-0f4ea4c91dd7",
+            "colId": "a94e21b0-0e78-4220-8346-65fd8f547db0",
+            "containerId": "e24d4f6b-ac48-4076-8d5b-987d04722751",
+            "name": "get sellers",
+            "url": "http://localhost:5000/api/buyer/list-of-sellers",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2024-01-11T08:07:11.265Z",
+            "modified": "2024-01-11T08:08:15.745Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTlmMThlMjY2NDliZmI2OTQyMTExN2YiLCJ1c2VyVHlwZSI6ImJ1eWVyIiwiaWF0IjoxNzA0OTYwNDQ0fQ.xJUwLh5G1_2amFdKHG2Pzk1We6b8JQ9Na92clmi34Og"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c576d8ba-ed7a-4fbb-9698-3356c12323c2",
+            "colId": "a94e21b0-0e78-4220-8346-65fd8f547db0",
+            "containerId": "e24d4f6b-ac48-4076-8d5b-987d04722751",
+            "name": "createOrder",
+            "url": "http://localhost:5000/api/buyer/create-order/659f191e6649bfb694211182",
+            "method": "POST",
+            "sortNum": 125000,
+            "created": "2024-01-11T08:11:28.392Z",
+            "modified": "2024-01-11T08:24:10.561Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTlmMThlMjY2NDliZmI2OTQyMTExN2YiLCJ1c2VyVHlwZSI6ImJ1eWVyIiwiaWF0IjoxNzA0OTYwNDQ0fQ.xJUwLh5G1_2amFdKHG2Pzk1We6b8JQ9Na92clmi34Og"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"items\": [\n    \n      \"659f9b1fad89a873145f3a6a\", \"659f9b29ad89a873145f3a6c\",\n     \"659f9b47ad89a873145f3a6e\"\n  ]\n}\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "4470c0b6-8a96-483a-871b-cc10b2cd13a6",
+            "colId": "a94e21b0-0e78-4220-8346-65fd8f547db0",
+            "containerId": "e24d4f6b-ac48-4076-8d5b-987d04722751",
+            "name": "getSellerCatalog",
+            "url": "http://localhost:5000/api/buyer/seller-catalog/659f191e6649bfb694211182",
+            "method": "GET",
+            "sortNum": 135000,
+            "created": "2024-01-11T08:11:58.768Z",
+            "modified": "2024-01-11T08:14:42.719Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTlmMThlMjY2NDliZmI2OTQyMTExN2YiLCJ1c2VyVHlwZSI6ImJ1eWVyIiwiaWF0IjoxNzA0OTYwNDQ0fQ.xJUwLh5G1_2amFdKHG2Pzk1We6b8JQ9Na92clmi34Og"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
